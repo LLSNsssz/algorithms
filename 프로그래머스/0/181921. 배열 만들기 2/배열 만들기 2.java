@@ -1,0 +1,17 @@
+import java.util.*;
+
+class Solution {
+    public int[] solution(int l, int r) {
+        List<Integer> list = new ArrayList<>();
+        for (int i = l; i <= r; i++) {
+            String a = Integer.toString(i);
+            if (a.matches("[5,0]{1,}")) {
+                list.add(i);
+            } 
+        }
+        if (list.isEmpty()) {
+                list.add(-1);
+        }
+        return list.stream().mapToInt(i -> i).toArray();
+    }
+}
