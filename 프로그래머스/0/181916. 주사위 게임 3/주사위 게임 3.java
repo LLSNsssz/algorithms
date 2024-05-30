@@ -48,7 +48,7 @@ class Solution {
             for (int i = 0; i < 4; i++) {
                 for (int j = i + 1; j < 4; j++) {
                     if (Objects.equals(list.get(i), list.get(j))){
-                        listSize3.remove(new Integer(list.get(i)));
+                        listSize3.remove(list.get(i));
                     } 
                 } 
             }
