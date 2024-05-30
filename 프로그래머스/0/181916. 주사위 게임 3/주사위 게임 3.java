@@ -44,7 +44,6 @@ class Solution {
  
         } else if(set.size() == 3) {
             List<Integer> listSize3 = new ArrayList<>(set);
-            List<Boolean> cList = new ArrayList<>();
         
             for (int i = 0; i < 4; i++) {
                 for (int j = i + 1; j < 4; j++) {
